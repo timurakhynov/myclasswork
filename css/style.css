@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: red;
+}
+
+.container:hover > .item:nth-child(1) {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  background: purple;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  color: white;
+  -webkit-transition: background-color 3s, -webkit-transform 2s ease-in-out;
+  transition: background-color 3s, -webkit-transform 2s ease-in-out;
+  transition: background-color 3s, transform 2s ease-in-out;
+  transition: background-color 3s, transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+}
+
+.item:nth-child(1) {
+  background: blue;
+}
+
+.item:nth-child(1):hover {
+  -webkit-transform: rotateX(180deg) rotateZ(360deg);
+          transform: rotateX(180deg) rotateZ(360deg);
+  background: white;
+}
+
+.item:nth-child(2) {
+  background: yellow;
+}
+
+.item:nth-child(3) {
+  background: green;
+}
+
+.item:nth-child(4) {
+  background: orange;
+}
+
+.item:nth-child(5) {
+  background: pink;
+}
+/*# sourceMappingURL=style.css.map */
